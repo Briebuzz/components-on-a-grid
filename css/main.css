@@ -1,5 +1,9 @@
 html {
   box-sizing: border-box;
+  line-height: 1.5;
+  font-family: Georgia, serif;
+  color: #000;
+  background-color: #f2f1ed;
 }
 
 *,
@@ -22,7 +26,26 @@ body {
   grid-template-columns: repeat(2, 1fr);
 }
 
+main {
+  display: grid;
+}
+
 h2 {
   font-family: "Patua One", sans-serif;
   color: #30658d;
+}
+
+figure {
+  margin: -1rem;
+  padding: 1rem;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  font-family: "Patua One", sans-serif;
+  font-size: 2rem;
+  color: #fff;
 }
