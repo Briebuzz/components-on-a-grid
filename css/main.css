@@ -24,10 +24,16 @@ header {
 body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  margin: 0;
+  padding: 1rem;
+  gap: 1rem;
+  grid-template-areas:
+    "banner banner"
+    "figure figure";
 }
 
 main {
-  display: grid;
+  display: contents;
 }
 
 h2 {
@@ -48,4 +54,27 @@ a {
   font-family: "Patua One", sans-serif;
   font-size: 2rem;
   color: #fff;
+}
+
+nav {
+  grid-column: 2/-1;
+  grid-row: 1;
+}
+
+.pano {
+  grid-area: banner;
+}
+
+.logo {
+  width: 14rem;
+  grid-column: 1;
+  grid-row: 1;
+  align-self: end;
+  z-index: 1;
+}
+
+ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
